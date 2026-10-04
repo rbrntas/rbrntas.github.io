@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>waxtag</title>
+<script>
+  // Sleeve tags link to /r/<Discogs release id>. With waxtag installed, iOS opens the
+  // app instead of this page. Without it, forward to the record on Discogs.
+  var m = location.pathname.match(/^\/r\/(\d+)\/?$/);
+  if (m) location.replace('https://www.discogs.com/release/' + m[1]);
+</script>
+<style>
+  body { font: 17px -apple-system, system-ui, sans-serif; background: #EEEDEA; color: #121212;
+         display: grid; place-items: center; min-height: 100vh; margin: 0; padding: 0 16px; text-align: center; }
+  @media (prefers-color-scheme: dark) { body { background: #0D0C0B; color: #EEEDEA; } }
+  a { color: #E8572A; }
+</style>
+</head>
+<body><p>Opening the record on Discogs…<br><a href="/">waxtag</a></p></body>
+</html>

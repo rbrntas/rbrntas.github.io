@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.com.rbrntas.waxtag"],
+        "components": [{ "/": "/r/*", "comment": "Record sleeve tags open in waxtag" }]
+      }
+    ]
+  }
+}
